@@ -1,4 +1,36 @@
- 20   / 100  
+20 / 100
+
+-5x10: no error checking for syscalls (-5 for each syscall, see checksyscalls output)
+
+-25: file/folder parameter doesn't work
+
+-5: missing ordering test -R -l, -Rl, -R -a -l
+
+
+
+checksyscalls output:
+
+file: [src/ls.cpp]
+  lines with syscalls:
+  
+  032:  [1;32m[Kperror(errstring)[m[K;
+  081:  [1;31m[K getpwuid(buf.st_uid)[m[K
+  082:  [1;31m[K getgrgid(buf.st_gid)[m[K
+  098:  [1;31m[K(lstat(pathname,&buf)[m[K
+  148:  [1;31m[K opendir(path)[m[K
+  152:  [1;31m[K readdir(dir)[m[K
+  157:  [1;31m[K(closedir(dir)[m[K
+  165:  [1;31m[K opendir(path)[m[K
+  169:  [1;31m[K readdir(dir)[m[K
+  198:  [1;31m[K(closedir(dir)[m[K
+  211:  [1;31m[K(lstat(temp,&dirbuf)[m[K
+  274: [1;31m[K getcwd(pathab,1000)[m[K
+
+summary:
+  number of syscalls... 11
+  number of perror..... 1
+  grade modifier....... -50
+
 
 
 
