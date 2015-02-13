@@ -1,6 +1,7 @@
-20 / 100
+60 / 100
 
--5x10: no error checking for syscalls (-5 for each syscall, see checksyscalls output)
+regraded because perror is in a function my_error, called 8 times
+-5x2: no error checking for 2 out of 10
 
 -25: file/folder parameter doesn't work
 
@@ -8,7 +9,7 @@
 
 
 
-checksyscalls output:
+checksyscalls output: 
 
 file: [src/ls.cpp]
   lines with syscalls:
