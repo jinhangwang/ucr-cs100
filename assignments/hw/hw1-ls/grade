@@ -1,4 +1,4 @@
-60 / 100
+70 / 100
 
 regraded because perror is in a function my_error, called 8 times
 -5x2: no error checking for 2 out of 10
@@ -7,7 +7,7 @@ regraded because perror is in a function my_error, called 8 times
 
 -5: missing ordering test -R -l, -Rl, -R -a -l
 
-
++10: coloring works except for the background
 
 checksyscalls output: 
 
