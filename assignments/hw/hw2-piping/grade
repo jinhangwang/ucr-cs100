@@ -1,4 +1,4 @@
-101 / 100
+76 / 100
 
 Input Redirection: 15/25
     [5/5] Input redirection from an existant file
@@ -24,4 +24,26 @@ Extra Credit: 30/40
     [20/20] Input redirection from string
     [10/20] Output redirection from file descriptors
 
-Total: 101/100
+[-25] Valgrind
+    When running the following sequence of commands:
+        > ls
+        > cat < Makefile
+    the result is:
+    ==9103== HEAP SUMMARY:
+    ==9103==     in use at exit: 629 bytes in 12 blocks
+    ==9103==   total heap usage: 88 allocs, 76 frees, 12,139 bytes allocated
+    ==9103== 
+    ==9103== LEAK SUMMARY:
+    ==9103==    definitely lost: 629 bytes in 12 blocks
+    ==9103==    indirectly lost: 0 bytes in 0 blocks
+    ==9103==      possibly lost: 0 bytes in 0 blocks
+    ==9103==    still reachable: 0 bytes in 0 blocks
+    ==9103==         suppressed: 0 bytes in 0 blocks
+    ==9103== Rerun with --leak-check=full to see details of leaked memory
+    ==9103== 
+    ==9103== For counts of detected and suppressed errors, rerun with: -v
+    ==9103== Use --track-origins=yes to see where uninitialised values come from
+    ==9103== ERROR SUMMARY: 11 errors from 7 contexts (suppressed: 4 from 4)
+
+
+Total: 76/100
