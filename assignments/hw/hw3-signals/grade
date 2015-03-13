@@ -1,4 +1,4 @@
- 35 / 100
+ 75 / 100
 
 -25: memory leak found in valgrind
 ==3977== LEAK SUMMARY:
@@ -15,7 +15,7 @@
 ==3977== ERROR SUMMARY: 7 errors from 4 contexts (suppressed: 6 from 6)
 ========================
 
-PATH variable: 0/40
+PATH variable: 40/40
     [ /10] Execute a program in the working directory.
     [ /10] Execute a program not in the working directory.
     [ /10] Execute a program using an absolute path.
